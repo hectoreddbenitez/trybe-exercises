@@ -1,0 +1,3 @@
+- Comprometimento
+- pontualidade
+- dominio de JS
