@@ -3,6 +3,15 @@ const secondDiv = document.getElementById('second-div');
 const thirdDiv = document.getElementById('third-div');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
+const container = document.querySelector('.container')
+
+
+function adicionaClasseTech(event){
+event.target.classList.add('tech');
+console.log(event.target);
+}
+
+container.addEventListener('click', adicionaClasseTech)
 
 /*
  Copie esse arquivo e edite apenas ele;
@@ -26,7 +35,8 @@ function resetText(event) {
   // que retorna o objeto que disparou o evento.
 }
 
-firstDiv.addEventListener('dblclick', resetText);
+
+secondDiv.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro do addEventListener. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'divUm'.
