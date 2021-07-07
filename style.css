@@ -68,3 +68,7 @@ body {
   .tech {
     transform: translateY(-20px);
   }
+
+  .tiraTech{
+    transform: translateY(0px);
+  }

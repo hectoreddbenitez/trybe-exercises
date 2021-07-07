@@ -8,10 +8,19 @@ const container = document.querySelector('.container')
 
 function adicionaClasseTech(event){
 event.target.classList.add('tech');
-console.log(event.target);
 }
 
-container.addEventListener('click', adicionaClasseTech)
+firstDiv.addEventListener('mouseover', adicionaClasseTech)
+secondDiv.addEventListener('mouseover', adicionaClasseTech)
+thirdDiv.addEventListener('mouseover', adicionaClasseTech)
+
+function removeClasseTech(event){
+  event.target.classList.add('tiraTech');
+}
+
+firstDiv.addEventListener('mouseleave', removeClasseTech)
+secondDiv.addEventListener('mouseleave', removeClasseTech)
+thirdDiv.addEventListener('mouseleave', removeClasseTech)
 
 /*
  Copie esse arquivo e edite apenas ele;
